@@ -1,0 +1,149 @@
+body {
+  background: #fdfaf5 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  font-family: 'Georgia', serif;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #5a4634;
+}
+
+.book-list {
+  width: 600px;
+  min-height: 600px;
+  margin: 20px auto;
+  background: #fff8f0;
+  border: 1px solid #e6dfd2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#id {
+  width: 80%;
+  background: #fbfbff;
+}
+
+.book-form {
+  max-width: 600px;
+  margin: 25px auto;
+  background: #fff8f0;
+  border: 1px solid #e6dfd2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.book-form input, .book-form button {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#isbnFeedback {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+/* Toggle Button Styles */
+.toggle-btn {
+  padding: 10px 20px;
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #ddd;
+}
+
+/* Toggle Section */
+.toggle-section {
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  align-items: center;
+  position: relative;
+}
+
+/* Select Boxes */
+select {
+  width: 84%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+select#status {
+  margin-right: 30rem;
+}
+
+.book-card {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #e0d6c3;
+  border-radius: 6px;
+  display: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.book-card h3 {
+  margin: 0;
+  color: #3b2f25;
+}
+
+.book-card small {
+  color: #7a6e5f;
+}
+
+/* Container for Filter & Add Book buttons */
+.twomargin {
+  gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Styling for secondary buttons (Clear button) */
+.secondary-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #777;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #eee;
+}
+
+/* Book Actions (buttons) at the bottom of the card */
+.book-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}

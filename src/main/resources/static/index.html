@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kindle Library</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
+  
+
+</head>
+<body>
+
+  <h1>E-Book Library</h1>
+  
+  
+  <div class="twomargin">
+  <div class="book-list" id="bookList">
+    
+    
+    
+  </div>
+  <div class="book-form">
+    <div class="button-row">
+      <button id="filterBtn" class="toggle-btn">🔍 Filter</button>
+      <button id="addBookBtn" class="toggle-btn">➕ Add Book</button>
+    </div>
+   
+
+    <div id="filterOptions" class="toggle-section">
+      <form>
+        <input type="text" id="searchName" placeholder="Search by name..." />
+        
+        <input type="text" id="searchAuthor" placeholder="Search by author..." />
+        
+        <input type="number" id="searchMinPrice" placeholder="Min price" />
+        
+        <input type="number" id="searchMaxPrice" placeholder="Max price" />
+        
+        <select id="searchCategoryId">
+          <option value="">Select Category</option>
+        </select><br>
+		<select id="searchStatus">
+		  <option value="">Select Status</option>
+		  <option value="true">Available</option>
+		  <option value="false">Unavailable</option>
+		</select>
+        
+        <button type="reset" class="toggle-btn">❌ Clear</button>
+        
+        <button id="applyFiltersBtn" class="toggle-btn">FILTER</button>
+      </form>
+    </div>
+    
+    <div id="addBookForm" class="toggle-section">
+    
+    <input type="text" id="name" placeholder="Book Name" required/><br>
+    <small id="nameFeedback" class="feedback-message"></small>
+     
+    <input type="text" id="authorName" placeholder="Author Name"required/><br>
+    <small id="authorNameFeedback" class="feedback-message"></small>
+     
+    <select id="categoryId">
+      <option value="">Select Category</option>
+    </select><br>
+  <small id="categoryFeedback" class="feedback-message"></small>
+   
+    <input type="text" id="isbn" placeholder="ISBN"required/><br>
+    <small id="isbnFeedback" style="display:none; margin-left: 0.5rem;"></small>
+     
+    <input type="number" id="price" placeholder="Price" min="1" required /><br>
+	<small id="priceFeedback" class="feedback-message"></small>
+      
+    <select id="status">
+  <option value="">Select Status</option>
+  <option value="true">Available</option>
+  <option value="false">Unavailable</option>
+</select><br>
+<span id="statusFeedback" class="feedback" style="display:none;"></span>
+<button type="reset class="toggle-btn">❌ Clear</button>
+    <button id="addBook" class="toggle-btn">Add Book</button>
+  </div>
+ </div>
+
+
+</body>
+</html>
